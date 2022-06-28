@@ -1,0 +1,136 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Neue Haas Grotesk Text Pro", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  font-size: 10px;
+  font-weight: bold;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+H1 {
+  font-size: 45px;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+.nav-links {
+  display: flex;
+}
+
+.nav-items a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.first-heading {
+  padding-top: 10vh;
+}
+
+.h1 {
+  padding-left: 35px;
+}
+.h2 {
+  padding-left: 90px;
+}
+
+.middle-heading {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 35px;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 20%;
+  width: 40%;
+  padding: 10px, 15px;
+}
+
+.bottom-heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 5vh;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media only screen and (max-width: 480px) {
+  .profile-pic {
+    width: 100%;
+    margin-top: 5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .middle-heading {
+    flex-direction: column;
+    padding-top: 5vh;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1,
+  .h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links,
+  .logo {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-links {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-items {
+    margin: 15px;
+  }
+}
